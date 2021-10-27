@@ -6,12 +6,22 @@
 //
 
 import SwiftUI
+import ASCollectionView_SwiftUI
 
 struct CuriosityView: View {
     let roverName: String = "Curoisity"
     let photos: [Photo]
+    @ObservedObject var viewmodel = CuriosityViewModel();
     var body: some View {
-       CustomCollectionView(data: photos, roverName: roverName)
+        ASCollectionView (data:viewmodel.photos) { photo, _ in
+            CollectionCell(photo: photo)
+        }.onReachedBoundary { boundary in
+            viewmodel.fetchPhotos();
+        }
+        .layout {
+            .grid()
+        }
+
     }
 }
 

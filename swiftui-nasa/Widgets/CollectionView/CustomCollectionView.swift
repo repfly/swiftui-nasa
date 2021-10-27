@@ -7,17 +7,20 @@
 
 import SwiftUI
 import Kingfisher
-import QGrid
+import ASCollectionView_SwiftUI
 
 struct CustomCollectionView: View {
+    @ObservedObject var homeViewModel = HomeViewModel();
+    
     let data: [Photo]
     let roverName: String
     
     var body: some View {
         NavigationView {
-            QGrid(data, columns: 2, hPadding: 25) { photo in
+            ASCollectionView (data:data) { photo, _ in
                 CollectionCell(photo: photo)
-            }.navigationTitle(roverName)
+            }
+            .layout {.grid()}
         }
     }
 }
@@ -28,6 +31,7 @@ struct CollectionCell: View {
     let photo: Photo
     var body: some View {
         HStack {
+            //          Dropping first 4 chars of the img url and add string to satisfy https protocol.
             KFImage(URL(string: "https" + (self.photo.imgSrc?.dropFirst(4))!))
                 .placeholder {
                     Image(systemName: "arrow.down.doc")

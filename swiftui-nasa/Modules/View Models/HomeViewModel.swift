@@ -17,10 +17,9 @@ class HomeViewModel: ObservableObject {
     
     init(photoService: RoverPhotoService = RoverPhotoService()) {
         self.photoService = photoService;
-        fetchPhotos()
+        fetchPhotos();
     }
     
-   
     
     func fetchPhotos() {
         photoService.fetchImages(
@@ -28,10 +27,10 @@ class HomeViewModel: ObservableObject {
             sol: sol,
             page: page,
             camera: cameraFilter) { result in
-                if ((result.photos?.count)! > 0) {
-                    self.photos.append(contentsOf: result.photos!)
-                } else {
-                    self.incrementSolAndFetch()
+                self.photos.append(contentsOf: result.photos!);
+                self.page += 1;
+                if (result.photos == nil) {
+                    self.incrementSolAndFetch();
                 }
             }
     }

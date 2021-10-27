@@ -5,19 +5,15 @@
 //  Created by Alper Yıldırım on 26.10.2021.
 //
 
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let welcome = try? newJSONDecoder().decode(Welcome.self, from: jsonData)
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - Rover Photos Model
 struct RoverPhotosModel: Codable {
     let photos: [Photo]?
 }
 
-
+//Identifiable protocol added later for respecting QGrid package component reqirements.
 struct Photo: Codable, Identifiable {
     let id, sol: Int?
     let camera: Camera?
