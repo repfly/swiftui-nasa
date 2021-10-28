@@ -13,7 +13,7 @@ struct HomeView: View {
     
     var body: some View {
         TabView {
-            CuriosityView(photos: viewmodel.photos).tabItem {
+            CuriosityView().tabItem {
                 Label("Menu", systemImage: "list.dash")
             }
         }

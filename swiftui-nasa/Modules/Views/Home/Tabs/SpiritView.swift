@@ -6,12 +6,25 @@
 //
 
 import SwiftUI
+import ASCollectionView_SwiftUI
 
 struct SpiritView: View {
     let roverName: String = "Spirit"
-    let photos: RoverPhotosModel
+    let photos: [Photo]
+    @ObservedObject var viewmodel: HomeViewModel = HomeViewModel()
+
     var body: some View {
-        CustomCollectionView(data: photos.photos ?? [], roverName: roverName)
+        ASCollectionView (data:viewmodel.photos) { photo, _ in
+            CollectionCell(photo: photo)
+                .padding(.bottom)
+        }
+        .onReachedBoundary { boundary in
+            viewmodel.fetchPhotos();
+        }
+        .layout {
+            .grid()
+        }
+        
     }
 }
 
