@@ -18,7 +18,7 @@ An app to inspect varius photos taken with mars rovers sent by NASA.
 * [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
 * [Kingfisher](https://github.com/onevcat/Kingfisher)
 * [ASCollectionView](https://github.com/apptekstudios/ASCollectionView)
-* [RxSwift](https://github.com/ReactiveX/RxSwift) and [RxCocoa] (https://github.com/ReactiveX/RxSwift/tree/main/RxCocoa)
+* [RxSwift](https://github.com/ReactiveX/RxSwift) and [RxCocoa](https://github.com/ReactiveX/RxSwift/tree/main/RxCocoa)
 
 ## Installation
 
