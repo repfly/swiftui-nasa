@@ -1,7 +1,4 @@
-# Film Browser Application
-
-![Application](https://raw.githubusercontent.com/Demircivi/FilmBrowser/master/Repository/application.gif)
-
+# Nasa Rover Photo Application
 ## Table Of Contents
 
 * [About](#about)
@@ -9,11 +6,11 @@
 * [Installation](#installation)
   * [Installing Dependencies](#installing-dependencies)
   * [Launching The Project](#launching-the-project)
-* [License](#license)
-
+  
+  
 ## About
 
-This repository contains an iOS film browser project that utilizes reactive and modern components.
+An app to inspect varius photos taken with mars rovers sent by NASA.
 
 ### Dependencies Used
 
@@ -53,6 +50,3 @@ open swiftui-nasa.xcworkspace
 
 After the Xcode window appears click run button to launch the application.
 
-## License
-
-[MIT](LICENSE)
