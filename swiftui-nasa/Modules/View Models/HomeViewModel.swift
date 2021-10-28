@@ -21,7 +21,7 @@ class HomeViewModel: ObservableObject {
     }
     
     func appendNewData(roverPhotos: RoverPhotosModel) {
-        if roverPhotos.photos?.count ?? 0 < 2 {
+        if (roverPhotos.photos?.count ?? 0 < 2) {
             incrementSolAndFetch();
             return;
         }

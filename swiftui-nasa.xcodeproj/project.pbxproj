@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A443E37BB2F84F5EDED120A5 /* Pods_swiftui_nasaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534B6975275DFF704B8E0A21 /* Pods_swiftui_nasaTests.framework */; };
 		A66DDF5434E659439A45C6CE /* Pods_swiftui_nasa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC781A106A4213FB9175252 /* Pods_swiftui_nasa.framework */; };
-		AF40EDE3272955CB00E15846 /* PageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF40EDE2272955CB00E15846 /* PageState.swift */; };
 		AF43CDD327287C5F00871017 /* swiftui_nasaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43CDD227287C5F00871017 /* swiftui_nasaApp.swift */; };
 		AF43CDD727287C6100871017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF43CDD627287C6100871017 /* Assets.xcassets */; };
 		AF43CDDA27287C6100871017 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF43CDD927287C6100871017 /* Preview Assets.xcassets */; };
@@ -56,7 +55,6 @@
 		75058104A7F438B833F90B80 /* Pods-swiftui-nasa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-nasa.release.xcconfig"; path = "Target Support Files/Pods-swiftui-nasa/Pods-swiftui-nasa.release.xcconfig"; sourceTree = "<group>"; };
 		96821A3F1D4CA30AF424A565 /* Pods-swiftui-nasa-swiftui-nasaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-nasa-swiftui-nasaUITests.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-nasa-swiftui-nasaUITests/Pods-swiftui-nasa-swiftui-nasaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C34242BC9693F559FD71F1C /* Pods-swiftui-nasaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-nasaTests.release.xcconfig"; path = "Target Support Files/Pods-swiftui-nasaTests/Pods-swiftui-nasaTests.release.xcconfig"; sourceTree = "<group>"; };
-		AF40EDE2272955CB00E15846 /* PageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageState.swift; sourceTree = "<group>"; };
 		AF43CDCF27287C5F00871017 /* swiftui-nasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-nasa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF43CDD227287C5F00871017 /* swiftui_nasaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_nasaApp.swift; sourceTree = "<group>"; };
 		AF43CDD627287C6100871017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 				AFC39BEC272914DB004244A0 /* RoverModel.swift */,
 				AFC39BED272914DB004244A0 /* RoverCameraModel.swift */,
 				AFC39BEE272914DB004244A0 /* RoverPhotosModel.swift */,
-				AF40EDE2272955CB00E15846 /* PageState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -540,7 +537,6 @@
 				AFC39C08272914EC004244A0 /* SpiritView.swift in Sources */,
 				AFC39C0E272914FD004244A0 /* CustomCollectionView.swift in Sources */,
 				AFC39C09272914EC004244A0 /* OpportunityView.swift in Sources */,
-				AF40EDE3272955CB00E15846 /* PageState.swift in Sources */,
 				AFC39BF8272914DB004244A0 /* APIConstants.swift in Sources */,
 				AFC39BF9272914DB004244A0 /* RoverPhotoService.swift in Sources */,
 				AFC39C07272914EC004244A0 /* CuriosityView.swift in Sources */,
