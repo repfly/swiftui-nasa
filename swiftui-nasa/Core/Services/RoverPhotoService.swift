@@ -10,10 +10,12 @@ import SwiftyJSON
 import Alamofire
 
 struct RoverPhotoService {
-    
+    // MARK: - Variables
+
     static let shared = RoverPhotoService();
     typealias completionHandler = ((RoverPhotosModel) -> Void)
     
+    // MARK: - Functions
     func fetchImages(
         roverName: RoverName,
         sol: Int,
@@ -22,8 +24,9 @@ struct RoverPhotoService {
         completion: @escaping (RoverPhotosModel) -> Void) {
             var queryUrl = "\(APIConstants.baseUrl)/\(roverName.rawValue)/photos?sol=\(sol)&page=\(page)&"
             if (camera != nil) {
-                queryUrl = "\(APIConstants.baseUrl)/\(roverName.rawValue)/photos?sol=\(sol)&page=\(page)&camera=\(camera!.rawValue)";
+                queryUrl = "\(APIConstants.baseUrl)/\(roverName.rawValue)/photos?sol=\(sol)&page=\(page)&camera=\(camera!.rawValue)&";
             }
+            print(queryUrl)
             APIClient.shared.createRequest(queryUrl, method: HTTPMethod.get) { result in
                 switch result {
                 case .success(let data):

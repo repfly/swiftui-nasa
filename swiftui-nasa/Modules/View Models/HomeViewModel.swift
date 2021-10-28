@@ -8,20 +8,25 @@
 import Foundation
 
 class HomeViewModel: ObservableObject {
+    
+    // MARK: - Variables
     private var photoService: RoverPhotoService;
     @Published var currentRover: RoverName = RoverName.curiosity;
-    @Published var sol: Int = 1;
+    @Published var sol: Int;
     @Published var page: Int = 1;
-    @Published var cameraFilter: CameraName? = nil;
+    @Published var cameraFilter: CameraName?;
     @Published var photos: [Photo] = [];
     
+    // MARK: - Class init
     init(photoService: RoverPhotoService = RoverPhotoService()) {
         self.photoService = photoService;
+        sol = 1;
         fetchPhotos();
     }
     
+    // MARK: - Functions
     func appendNewData(roverPhotos: RoverPhotosModel) {
-        if (roverPhotos.photos?.count ?? 0 < 2) {
+        if (roverPhotos.photos!.count < 2 || page > 4) {
             incrementSolAndFetch();
             return;
         }
@@ -39,12 +44,18 @@ class HomeViewModel: ObservableObject {
         self.currentRover = roverName
     }
     
-    func fetchPhotos() {
+    func filterByCameraAndFetch(cameraName: CameraName?) {
+        cameraFilter = cameraName ?? nil;
+        self.photos.removeAll()
+        fetchPhotos();
+    }
+    
+    func fetchPhotos(cameraName: CameraName? = nil) {
         photoService.fetchImages(
             roverName: currentRover,
             sol: sol,
             page: page,
-            camera: cameraFilter) { result in
+            camera: cameraName) { result in
                 self.appendNewData(roverPhotos: result);
             }
     }
