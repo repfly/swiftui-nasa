@@ -19,6 +19,8 @@ struct CustomCollectionView: View {
         NavigationView {
             ASCollectionView (data:data) { photo, _ in
                 CollectionCell(photo: photo)
+            }.onReachedBoundary { boundry in
+                homeViewModel.fetchPhotos();
             }
             .layout {.grid()}
         }

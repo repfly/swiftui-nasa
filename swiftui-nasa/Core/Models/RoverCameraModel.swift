@@ -41,6 +41,6 @@ enum FullName: String, Codable {
     case mardi = "Mars Descent Imager"
     case navcam = "Navigation Camera"
     case pancam = "Panoramic Camera"
-    case minites = "Miniature Thermal Emission Spectrometer (Mini-TES)"
+    case minites = "Miniature Thermal Emission Spectrometer"
 }
 

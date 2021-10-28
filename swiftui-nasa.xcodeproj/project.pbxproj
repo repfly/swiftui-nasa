@@ -22,7 +22,6 @@
 		AFC39BF7272914DB004244A0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39BF0272914DB004244A0 /* APIClient.swift */; };
 		AFC39BF8272914DB004244A0 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39BF1272914DB004244A0 /* APIConstants.swift */; };
 		AFC39BF9272914DB004244A0 /* RoverPhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39BF3272914DB004244A0 /* RoverPhotoService.swift */; };
-		AFC39C05272914EC004244A0 /* CuriosityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39BFC272914EC004244A0 /* CuriosityViewModel.swift */; };
 		AFC39C06272914EC004244A0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39BFD272914EC004244A0 /* HomeViewModel.swift */; };
 		AFC39C07272914EC004244A0 /* CuriosityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39C01272914EC004244A0 /* CuriosityView.swift */; };
 		AFC39C08272914EC004244A0 /* SpiritView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39C02272914EC004244A0 /* SpiritView.swift */; };
@@ -73,7 +72,6 @@
 		AFC39BF0272914DB004244A0 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		AFC39BF1272914DB004244A0 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		AFC39BF3272914DB004244A0 /* RoverPhotoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverPhotoService.swift; sourceTree = "<group>"; };
-		AFC39BFC272914EC004244A0 /* CuriosityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuriosityViewModel.swift; sourceTree = "<group>"; };
 		AFC39BFD272914EC004244A0 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		AFC39C01272914EC004244A0 /* CuriosityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuriosityView.swift; sourceTree = "<group>"; };
 		AFC39C02272914EC004244A0 /* SpiritView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiritView.swift; sourceTree = "<group>"; };
@@ -232,7 +230,6 @@
 		AFC39BFB272914EC004244A0 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				AFC39BFC272914EC004244A0 /* CuriosityViewModel.swift */,
 				AFC39BFD272914EC004244A0 /* HomeViewModel.swift */,
 			);
 			path = "View Models";
@@ -543,7 +540,6 @@
 				AFC39C08272914EC004244A0 /* SpiritView.swift in Sources */,
 				AFC39C0E272914FD004244A0 /* CustomCollectionView.swift in Sources */,
 				AFC39C09272914EC004244A0 /* OpportunityView.swift in Sources */,
-				AFC39C05272914EC004244A0 /* CuriosityViewModel.swift in Sources */,
 				AF40EDE3272955CB00E15846 /* PageState.swift in Sources */,
 				AFC39BF8272914DB004244A0 /* APIConstants.swift in Sources */,
 				AFC39BF9272914DB004244A0 /* RoverPhotoService.swift in Sources */,

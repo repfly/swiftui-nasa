@@ -10,18 +10,20 @@ import ASCollectionView_SwiftUI
 
 struct CuriosityView: View {
     let roverName: String = "Curoisity"
-    let photos: [Photo]
-    @ObservedObject var viewmodel = CuriosityViewModel();
+    let photos: [Photo] = []
+    @ObservedObject var viewmodel = HomeViewModel();
     var body: some View {
         ASCollectionView (data:viewmodel.photos) { photo, _ in
             CollectionCell(photo: photo)
-        }.onReachedBoundary { boundary in
+                .padding(.bottom)
+        }
+        .onReachedBoundary { boundary in
             viewmodel.fetchPhotos();
         }
         .layout {
             .grid()
         }
-
+        
     }
 }
 

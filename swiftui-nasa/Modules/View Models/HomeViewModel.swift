@@ -20,6 +20,24 @@ class HomeViewModel: ObservableObject {
         fetchPhotos();
     }
     
+    func appendNewData(roverPhotos: RoverPhotosModel) {
+        if roverPhotos.photos?.count ?? 0 < 2 {
+            incrementSolAndFetch();
+            return;
+        }
+        self.photos.append(contentsOf: roverPhotos.photos!);
+        self.page += 1;
+    }
+    
+    func incrementSolAndFetch() {
+        sol += 1;
+        page = 1;
+        fetchPhotos();
+    }
+    
+    func changeCurrentRover(roverName: RoverName) {
+        self.currentRover = roverName
+    }
     
     func fetchPhotos() {
         photoService.fetchImages(
@@ -27,17 +45,7 @@ class HomeViewModel: ObservableObject {
             sol: sol,
             page: page,
             camera: cameraFilter) { result in
-                self.photos.append(contentsOf: result.photos!);
-                self.page += 1;
-                if (result.photos == nil) {
-                    self.incrementSolAndFetch();
-                }
+                self.appendNewData(roverPhotos: result);
             }
-    }
-    
-    func incrementSolAndFetch() {
-        sol += 1;
-        page = 1;
-        fetchPhotos();
     }
 }
