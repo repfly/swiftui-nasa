@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		A443E37BB2F84F5EDED120A5 /* Pods_swiftui_nasaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534B6975275DFF704B8E0A21 /* Pods_swiftui_nasaTests.framework */; };
 		A66DDF5434E659439A45C6CE /* Pods_swiftui_nasa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC781A106A4213FB9175252 /* Pods_swiftui_nasa.framework */; };
-		AF40EDE3272955CB00E15846 /* PageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF40EDE2272955CB00E15846 /* PageState.swift */; };
 		AF43CDD327287C5F00871017 /* swiftui_nasaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43CDD227287C5F00871017 /* swiftui_nasaApp.swift */; };
 		AF43CDD727287C6100871017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF43CDD627287C6100871017 /* Assets.xcassets */; };
 		AF43CDDA27287C6100871017 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF43CDD927287C6100871017 /* Preview Assets.xcassets */; };
 		AF43CDE427287C6200871017 /* swiftui_nasaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43CDE327287C6200871017 /* swiftui_nasaTests.swift */; };
 		AF43CDEE27287C6200871017 /* swiftui_nasaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43CDED27287C6200871017 /* swiftui_nasaUITests.swift */; };
 		AF43CDF027287C6200871017 /* swiftui_nasaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43CDEF27287C6200871017 /* swiftui_nasaUITestsLaunchTests.swift */; };
+		AFA33B45272A72B30034A6F5 /* PhotoDetailSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA33B44272A72B30034A6F5 /* PhotoDetailSheet.swift */; };
 		AFC39BF4272914DB004244A0 /* RoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39BEC272914DB004244A0 /* RoverModel.swift */; };
 		AFC39BF5272914DB004244A0 /* RoverCameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39BED272914DB004244A0 /* RoverCameraModel.swift */; };
 		AFC39BF6272914DB004244A0 /* RoverPhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39BEE272914DB004244A0 /* RoverPhotosModel.swift */; };
@@ -27,7 +27,7 @@
 		AFC39C08272914EC004244A0 /* SpiritView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39C02272914EC004244A0 /* SpiritView.swift */; };
 		AFC39C09272914EC004244A0 /* OpportunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39C03272914EC004244A0 /* OpportunityView.swift */; };
 		AFC39C0A272914EC004244A0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39C04272914EC004244A0 /* HomeView.swift */; };
-		AFC39C0E272914FD004244A0 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39C0D272914FD004244A0 /* CustomCollectionView.swift */; };
+		AFC39C0E272914FD004244A0 /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC39C0D272914FD004244A0 /* CustomCollectionCell.swift */; };
 		EAA73ECA59E33EC95C32866B /* Pods_swiftui_nasa_swiftui_nasaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C061E327CF3CD26B841FC0F8 /* Pods_swiftui_nasa_swiftui_nasaUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +56,6 @@
 		75058104A7F438B833F90B80 /* Pods-swiftui-nasa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-nasa.release.xcconfig"; path = "Target Support Files/Pods-swiftui-nasa/Pods-swiftui-nasa.release.xcconfig"; sourceTree = "<group>"; };
 		96821A3F1D4CA30AF424A565 /* Pods-swiftui-nasa-swiftui-nasaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-nasa-swiftui-nasaUITests.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-nasa-swiftui-nasaUITests/Pods-swiftui-nasa-swiftui-nasaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C34242BC9693F559FD71F1C /* Pods-swiftui-nasaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-nasaTests.release.xcconfig"; path = "Target Support Files/Pods-swiftui-nasaTests/Pods-swiftui-nasaTests.release.xcconfig"; sourceTree = "<group>"; };
-		AF40EDE2272955CB00E15846 /* PageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageState.swift; sourceTree = "<group>"; };
 		AF43CDCF27287C5F00871017 /* swiftui-nasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-nasa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF43CDD227287C5F00871017 /* swiftui_nasaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_nasaApp.swift; sourceTree = "<group>"; };
 		AF43CDD627287C6100871017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		AF43CDE927287C6200871017 /* swiftui-nasaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-nasaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF43CDED27287C6200871017 /* swiftui_nasaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_nasaUITests.swift; sourceTree = "<group>"; };
 		AF43CDEF27287C6200871017 /* swiftui_nasaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_nasaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AFA33B44272A72B30034A6F5 /* PhotoDetailSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailSheet.swift; sourceTree = "<group>"; };
 		AFC39BEC272914DB004244A0 /* RoverModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverModel.swift; sourceTree = "<group>"; };
 		AFC39BED272914DB004244A0 /* RoverCameraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverCameraModel.swift; sourceTree = "<group>"; };
 		AFC39BEE272914DB004244A0 /* RoverPhotosModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoverPhotosModel.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		AFC39C02272914EC004244A0 /* SpiritView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiritView.swift; sourceTree = "<group>"; };
 		AFC39C03272914EC004244A0 /* OpportunityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpportunityView.swift; sourceTree = "<group>"; };
 		AFC39C04272914EC004244A0 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		AFC39C0D272914FD004244A0 /* CustomCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		AFC39C0D272914FD004244A0 /* CustomCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
 		C061E327CF3CD26B841FC0F8 /* Pods_swiftui_nasa_swiftui_nasaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftui_nasa_swiftui_nasaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E80C39535F8B2876642350 /* Pods-swiftui-nasaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-nasaTests.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-nasaTests/Pods-swiftui-nasaTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,7 +196,6 @@
 				AFC39BEC272914DB004244A0 /* RoverModel.swift */,
 				AFC39BED272914DB004244A0 /* RoverCameraModel.swift */,
 				AFC39BEE272914DB004244A0 /* RoverPhotosModel.swift */,
-				AF40EDE2272955CB00E15846 /* PageState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC39C0C272914FD004244A0 /* CollectionView */,
+				AFA33B44272A72B30034A6F5 /* PhotoDetailSheet.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -273,7 +273,7 @@
 		AFC39C0C272914FD004244A0 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				AFC39C0D272914FD004244A0 /* CustomCollectionView.swift */,
+				AFC39C0D272914FD004244A0 /* CustomCollectionCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -536,11 +536,11 @@
 				AFC39BF5272914DB004244A0 /* RoverCameraModel.swift in Sources */,
 				AFC39C06272914EC004244A0 /* HomeViewModel.swift in Sources */,
 				AFC39C0A272914EC004244A0 /* HomeView.swift in Sources */,
+				AFA33B45272A72B30034A6F5 /* PhotoDetailSheet.swift in Sources */,
 				AFC39BF6272914DB004244A0 /* RoverPhotosModel.swift in Sources */,
 				AFC39C08272914EC004244A0 /* SpiritView.swift in Sources */,
-				AFC39C0E272914FD004244A0 /* CustomCollectionView.swift in Sources */,
+				AFC39C0E272914FD004244A0 /* CustomCollectionCell.swift in Sources */,
 				AFC39C09272914EC004244A0 /* OpportunityView.swift in Sources */,
-				AF40EDE3272955CB00E15846 /* PageState.swift in Sources */,
 				AFC39BF8272914DB004244A0 /* APIConstants.swift in Sources */,
 				AFC39BF9272914DB004244A0 /* RoverPhotoService.swift in Sources */,
 				AFC39C07272914EC004244A0 /* CuriosityView.swift in Sources */,
