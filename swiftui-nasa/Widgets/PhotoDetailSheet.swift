@@ -17,8 +17,7 @@ struct PhotoDetailSheetBody: View {
                     Image(systemName: "arrow.down.doc")
                         .font(.largeTitle)
                         .opacity(0.3)
-                }.resizable()
-            
+                }
         }
     }
 }

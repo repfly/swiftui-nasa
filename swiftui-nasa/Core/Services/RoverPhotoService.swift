@@ -11,7 +11,6 @@ import Alamofire
 
 struct RoverPhotoService {
     // MARK: - Variables
-
     static let shared = RoverPhotoService();
     typealias completionHandler = ((RoverPhotosModel) -> Void)
     
@@ -21,12 +20,11 @@ struct RoverPhotoService {
         sol: Int,
         page: Int,
         camera: CameraName?,
-        completion: @escaping (RoverPhotosModel) -> Void) {
+        completion: @escaping completionHandler) {
             var queryUrl = "\(APIConstants.baseUrl)/\(roverName.rawValue)/photos?sol=\(sol)&page=\(page)&"
             if (camera != nil) {
-                queryUrl = "\(APIConstants.baseUrl)/\(roverName.rawValue)/photos?sol=\(sol)&page=\(page)&camera=\(camera!.rawValue)&";
+                queryUrl += "&camera=\(camera!.rawValue)&";
             }
-            print(queryUrl)
             APIClient.shared.createRequest(queryUrl, method: HTTPMethod.get) { result in
                 switch result {
                 case .success(let data):
