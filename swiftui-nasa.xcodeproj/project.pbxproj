@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		A443E37BB2F84F5EDED120A5 /* Pods_swiftui_nasaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534B6975275DFF704B8E0A21 /* Pods_swiftui_nasaTests.framework */; };
 		A66DDF5434E659439A45C6CE /* Pods_swiftui_nasa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC781A106A4213FB9175252 /* Pods_swiftui_nasa.framework */; };
+		AF0205CE2731027500F3B08B /* Target.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0205CD2731027500F3B08B /* Target.swift */; };
+		AF0205D0273102A600F3B08B /* TargetVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0205CF273102A600F3B08B /* TargetVersion.swift */; };
+		AF0205D2273106F000F3B08B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0205D1273106F000F3B08B /* APIService.swift */; };
+		AF0205D42731074600F3B08B /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0205D32731074600F3B08B /* APIServiceProtocol.swift */; };
+		AF0205D6273109D400F3B08B /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0205D5273109D400F3B08B /* MockAPIService.swift */; };
+		AF0205D927310A8700F3B08B /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0205D827310A8700F3B08B /* MockNetworkManager.swift */; };
+		AF0205DB27310AB700F3B08B /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0205DA27310AB700F3B08B /* NetworkManagerProtocol.swift */; };
+		AF0205DD27310B7F00F3B08B /* NetorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0205DC27310B7F00F3B08B /* NetorkManager.swift */; };
 		AF43CDD327287C5F00871017 /* swiftui_nasaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF43CDD227287C5F00871017 /* swiftui_nasaApp.swift */; };
 		AF43CDD727287C6100871017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF43CDD627287C6100871017 /* Assets.xcassets */; };
 		AF43CDDA27287C6100871017 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF43CDD927287C6100871017 /* Preview Assets.xcassets */; };
@@ -56,6 +64,14 @@
 		75058104A7F438B833F90B80 /* Pods-swiftui-nasa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-nasa.release.xcconfig"; path = "Target Support Files/Pods-swiftui-nasa/Pods-swiftui-nasa.release.xcconfig"; sourceTree = "<group>"; };
 		96821A3F1D4CA30AF424A565 /* Pods-swiftui-nasa-swiftui-nasaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-nasa-swiftui-nasaUITests.debug.xcconfig"; path = "Target Support Files/Pods-swiftui-nasa-swiftui-nasaUITests/Pods-swiftui-nasa-swiftui-nasaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C34242BC9693F559FD71F1C /* Pods-swiftui-nasaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftui-nasaTests.release.xcconfig"; path = "Target Support Files/Pods-swiftui-nasaTests/Pods-swiftui-nasaTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF0205CD2731027500F3B08B /* Target.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target.swift; sourceTree = "<group>"; };
+		AF0205CF273102A600F3B08B /* TargetVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetVersion.swift; sourceTree = "<group>"; };
+		AF0205D1273106F000F3B08B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		AF0205D32731074600F3B08B /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		AF0205D5273109D400F3B08B /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		AF0205D827310A8700F3B08B /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		AF0205DA27310AB700F3B08B /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		AF0205DC27310B7F00F3B08B /* NetorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetorkManager.swift; sourceTree = "<group>"; };
 		AF43CDCF27287C5F00871017 /* swiftui-nasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-nasa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF43CDD227287C5F00871017 /* swiftui_nasaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_nasaApp.swift; sourceTree = "<group>"; };
 		AF43CDD627287C6100871017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +136,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AF0205CA27301FE500F3B08B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF43CDD627287C6100871017 /* Assets.xcassets */,
+				AF43CDD827287C6100871017 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF0205CB273020AB00F3B08B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AFC39BEA272914DB004244A0 /* Core */,
+				AFC39BFA272914EC004244A0 /* Modules */,
+				AFC39C0B272914FD004244A0 /* Widgets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AF0205CC27305D8C00F3B08B /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				AFC39BF1272914DB004244A0 /* APIConstants.swift */,
+				AF0205CD2731027500F3B08B /* Target.swift */,
+				AF0205CF273102A600F3B08B /* TargetVersion.swift */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		AF0205D727310A6800F3B08B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AF0205D827310A8700F3B08B /* MockNetworkManager.swift */,
+				AF0205DA27310AB700F3B08B /* NetworkManagerProtocol.swift */,
+				AF0205DC27310B7F00F3B08B /* NetorkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		AF43CDC627287C5F00871017 = {
 			isa = PBXGroup;
 			children = (
@@ -145,12 +200,9 @@
 		AF43CDD127287C5F00871017 /* swiftui-nasa */ = {
 			isa = PBXGroup;
 			children = (
-				AFC39BEA272914DB004244A0 /* Core */,
-				AFC39BFA272914EC004244A0 /* Modules */,
-				AFC39C0B272914FD004244A0 /* Widgets */,
+				AF0205CB273020AB00F3B08B /* Sources */,
 				AF43CDD227287C5F00871017 /* swiftui_nasaApp.swift */,
-				AF43CDD627287C6100871017 /* Assets.xcassets */,
-				AF43CDD827287C6100871017 /* Preview Content */,
+				AF0205CA27301FE500F3B08B /* Resources */,
 			);
 			path = "swiftui-nasa";
 			sourceTree = "<group>";
@@ -184,8 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC39BEB272914DB004244A0 /* Models */,
-				AFC39BEF272914DB004244A0 /* API */,
-				AFC39BF2272914DB004244A0 /* Services */,
+				AFC39BEF272914DB004244A0 /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -200,21 +251,26 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		AFC39BEF272914DB004244A0 /* API */ = {
+		AFC39BEF272914DB004244A0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				AF0205D727310A6800F3B08B /* Manager */,
+				AFC39BF2272914DB004244A0 /* Service */,
+				AF0205CC27305D8C00F3B08B /* Miscellaneous */,
 				AFC39BF0272914DB004244A0 /* APIClient.swift */,
-				AFC39BF1272914DB004244A0 /* APIConstants.swift */,
 			);
-			path = API;
+			path = Network;
 			sourceTree = "<group>";
 		};
-		AFC39BF2272914DB004244A0 /* Services */ = {
+		AFC39BF2272914DB004244A0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				AFC39BF3272914DB004244A0 /* RoverPhotoService.swift */,
+				AF0205D1273106F000F3B08B /* APIService.swift */,
+				AF0205D32731074600F3B08B /* APIServiceProtocol.swift */,
+				AF0205D5273109D400F3B08B /* MockAPIService.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		AFC39BFA272914EC004244A0 /* Modules */ = {
@@ -533,19 +589,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF0205D42731074600F3B08B /* APIServiceProtocol.swift in Sources */,
+				AF0205D2273106F000F3B08B /* APIService.swift in Sources */,
 				AFC39BF5272914DB004244A0 /* RoverCameraModel.swift in Sources */,
 				AFC39C06272914EC004244A0 /* HomeViewModel.swift in Sources */,
 				AFC39C0A272914EC004244A0 /* HomeView.swift in Sources */,
 				AFA33B45272A72B30034A6F5 /* PhotoDetailSheet.swift in Sources */,
 				AFC39BF6272914DB004244A0 /* RoverPhotosModel.swift in Sources */,
 				AFC39C08272914EC004244A0 /* SpiritView.swift in Sources */,
+				AF0205D6273109D400F3B08B /* MockAPIService.swift in Sources */,
 				AFC39C0E272914FD004244A0 /* CustomCollectionCell.swift in Sources */,
 				AFC39C09272914EC004244A0 /* OpportunityView.swift in Sources */,
 				AFC39BF8272914DB004244A0 /* APIConstants.swift in Sources */,
+				AF0205CE2731027500F3B08B /* Target.swift in Sources */,
 				AFC39BF9272914DB004244A0 /* RoverPhotoService.swift in Sources */,
+				AF0205D927310A8700F3B08B /* MockNetworkManager.swift in Sources */,
+				AF0205D0273102A600F3B08B /* TargetVersion.swift in Sources */,
+				AF0205DB27310AB700F3B08B /* NetworkManagerProtocol.swift in Sources */,
 				AFC39C07272914EC004244A0 /* CuriosityView.swift in Sources */,
 				AFC39BF4272914DB004244A0 /* RoverModel.swift in Sources */,
 				AFC39BF7272914DB004244A0 /* APIClient.swift in Sources */,
+				AF0205DD27310B7F00F3B08B /* NetorkManager.swift in Sources */,
 				AF43CDD327287C5F00871017 /* swiftui_nasaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,7 +771,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftui-nasa/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "swiftui-nasa/Resources/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -736,7 +800,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"swiftui-nasa/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "swiftui-nasa/Resources/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

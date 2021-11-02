@@ -13,6 +13,7 @@ struct APIClient {
     
     static let shared = APIClient();
     typealias completionHandler = ((Result<Data, AFError>) -> Void)
+    
     let encoder = JSONEncoder();
     func createRequest(
         _ url: String,
